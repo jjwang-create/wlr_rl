@@ -1,0 +1,106 @@
+<mujoco model="wheel_legged_robot">
+  <compiler angle="radian" meshdir="../meshes/"/>
+
+  <asset>
+    <!-- 地面网格纹理 -->
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.4 0.4 0.4" rgb2="0.3 0.3 0.3" width="512" height="512"/>
+    <material name="grid_mat" texture="grid" texrepeat="10 10" texuniform="true" reflectance="0.1"/>
+
+    <!-- 基础网格 -->
+    <mesh name="base_link" file="base.STL" />
+    <mesh name="hip_l_link" file="hip_link_l.STL" />
+    <mesh name="knee_l_link" file="knee_link_l.STL" />
+    <mesh name="wheel_l" file="wheel_l.STL" />
+    <mesh name="hip_r_link" file="hip_link_r.STL" />
+    <mesh name="knee_r_link" file="knee_link_r.STL" />
+    <mesh name="wheel_r" file="wheel_r.STL" />
+  </asset>
+
+  <worldbody>
+    <!-- 光源 -->
+    <light name="spotlight" mode="targetbodycom" target="base_link"
+           diffuse="0.8 0.8 0.8" specular="0.2 0.2 0.2" pos="0 -2 3" cutoff="30"/>
+    <light name="top" directional="true" diffuse="0.6 0.6 0.6" specular="0.2 0.2 0.2" pos="0 0 5" dir="0 0 -1"/>
+
+    <!-- 地面 -->
+    <geom name="ground" type="plane" size="50 50 0.1" material="grid_mat"
+          contype="1" conaffinity="1" friction="1 0.005 0.0001"/>
+
+    <!-- base_link: URDF inertial origin(0.0066, 0, -0.0318), mass=11.513 -->
+    <body name="base_link" pos="0 0 0.4">
+      <inertial pos="0.0066 0 -0.0318" mass="11.513" 
+                fullinertia="0.1392 0.2492 0.3111 0.001321 -0.01715 0.0002667"/>
+      <joint name="floating_base" type="free"/>
+      <geom type="mesh" mesh="base_link" contype="0" conaffinity="0" rgba="0.1 0.1 0.1 1"/>
+      <!-- base碰撞盒 -->
+      <geom type="box" size="0.25 0.10 0.10" pos="0 0 -0.03" rgba="0.1 0.1 0.1 0"/>
+      <geom type="box" size="0.125 0.16 0.06" pos="0 0 -0.04" rgba="0.1 0.1 0.1 0"/>
+      
+      <!-- 左腿 hip_l_joint: origin(0, 0.179, 0), rpy(0, 1.5708, 0) -->
+      <body name="hip_l_link" pos="0 0.179 0" quat="0.7071068 0 0.7071068 0">
+        <inertial pos="0.098 0 0" mass="0.934" 
+                  fullinertia="0.0002846 0.003525624 0.0032762672 0.0000143136 0.0001012944 -0.0000042544"/>
+        <joint name="hip_l_joint" pos="0 0 0" axis="0 1 0" limited="false"/>
+        <geom type="mesh" mesh="hip_l_link" contype="0" conaffinity="0" rgba="0.2 0.2 0.2 1"/>
+        <geom type="box" size="0.105 0.0075 0.03" pos="0.105 0 0" rgba="0.2 0.2 0.2 0"/>
+        
+        <!-- knee_l_joint: origin(0.210, 0.0165, 0), rpy(0, 3.1416, 0) -->
+        <body name="knee_l_link" pos="0.210 0.0165 0" quat="0 0 1 0">
+          <inertial pos="0.123 0 0" mass="0.67" 
+                    fullinertia="0.0009460464 0.0033157904 0.0042459008 0.0016010944 0.000006592 -0.0000033216"/>
+          <joint name="knee_l_joint" pos="0 0 0" axis="0 1 0" limited="true" range="0.416 2.153"/>
+          <geom type="mesh" mesh="knee_l_link" contype="0" conaffinity="0" rgba="0.3 0.3 0.3 1"/>
+          <geom type="box" size="0.124 0.0075 0.03" pos="0.124 0 0" rgba="0.3 0.3 0.3 0"/>
+          
+          <!-- wheel_l_joint: origin(0.248, 0.0295, 0) -->
+          <body name="wheel_l" pos="0.248 0.0295 0">
+            <inertial pos="0 0 0" mass="0.468" 
+                      diaginertia="0.00034258 0.00054 0.000343769"/>
+            <joint name="wheel_l_joint" pos="0 0 0" axis="0 1 0" limited="false"/>
+            <geom type="mesh" mesh="wheel_l" contype="0" conaffinity="0" rgba="0.05 0.05 0.05 1"/>
+            <geom type="cylinder" size="0.06 0.0075" quat="0.7071068 0.7071068 0 0" 
+                  contype="1" conaffinity="1" friction="1 0.005 0.0001"/>
+          </body>
+        </body>
+      </body>
+      
+      <!-- 右腿 hip_r_joint: origin(0, -0.179, 0), rpy(0, 1.5708, 0) -->
+      <body name="hip_r_link" pos="0 -0.179 0" quat="0.7071068 0 0.7071068 0">
+        <inertial pos="0.098 0 0" mass="0.934" 
+                  fullinertia="0.0002846 0.003525624 0.0032762672 0.0000143136 0.0001012944 -0.0000042544"/>
+        <joint name="hip_r_joint" pos="0 0 0" axis="0 1 0" limited="false"/>
+        <geom type="mesh" mesh="hip_r_link" contype="0" conaffinity="0" rgba="0.2 0.2 0.2 1"/>
+        <geom type="box" size="0.105 0.0075 0.03" pos="0.105 0 0" rgba="0.2 0.2 0.2 0"/>
+        
+        <!-- knee_r_joint: origin(0.210, -0.0165, 0), rpy(0, 3.1416, 0) -->
+        <body name="knee_r_link" pos="0.210 -0.0165 0" quat="0 0 1 0">
+          <inertial pos="0.123 0 0" mass="0.67" 
+                    fullinertia="0.0009460464 0.0033157904 0.0042459008 0.0016010944 0.000006592 -0.0000033216"/>
+          <joint name="knee_r_joint" pos="0 0 0" axis="0 1 0" limited="true" range="0.416 2.153"/>
+          <geom type="mesh" mesh="knee_r_link" contype="0" conaffinity="0" rgba="0.3 0.3 0.3 1"/>
+          <geom type="box" size="0.124 0.0075 0.03" pos="0.124 0 0" rgba="0.3 0.3 0.3 0"/>
+          
+          <!-- wheel_r_joint: origin(0.248, -0.0295, 0) -->
+          <body name="wheel_r" pos="0.248 -0.0295 0">
+            <inertial pos="0 0 0" mass="0.468" 
+                      diaginertia="0.00034258 0.00054 0.000343769"/>
+            <joint name="wheel_r_joint" pos="0 0 0" axis="0 1 0" limited="false"/>
+            <geom type="mesh" mesh="wheel_r" contype="0" conaffinity="0" rgba="0.05 0.05 0.05 1"/>
+            <geom type="cylinder" size="0.06 0.0075" quat="0.7071068 0.7071068 0 0" 
+                  contype="1" conaffinity="1" friction="1 0.005 0.0001"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <!-- 腿部执行器 effort限制 -->
+    <motor name="hip_l_joint" joint="hip_l_joint" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+    <motor name="knee_l_joint" joint="knee_l_joint" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+    <motor name="wheel_l_joint" joint="wheel_l_joint" gear="1" ctrllimited="true" ctrlrange="-5 5"/>
+    <motor name="hip_r_joint" joint="hip_r_joint" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+    <motor name="knee_r_joint" joint="knee_r_joint" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+    <motor name="wheel_r_joint" joint="wheel_r_joint" gear="1" ctrllimited="true" ctrlrange="-5 5"/>
+  </actuator>
+</mujoco>
