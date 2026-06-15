@@ -1,6 +1,6 @@
 # Template for Isaac Lab Projects
 
-##coworkers
+## Coworkers
 
 Wangjiajun、Zhangcenshuo，equally contributed to this repo.
 
