@@ -1,5 +1,9 @@
 # Template for Isaac Lab Projects
 
+##coworkers
+
+Wangjiajun、Zhangcenshuo，equally contributed to this repo.
+
 ## Overview
 
 This project/repository serves as a template for building projects or extensions based on Isaac Lab.
