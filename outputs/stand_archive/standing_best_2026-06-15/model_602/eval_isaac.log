@@ -1,0 +1,265 @@
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /opt/mamba/envs/env_isaaclab/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+[INFO]: Parsing configuration from: wlr_rl.tasks.manager_based.wlr_rl.stand_env_cfg:StandStrictEnvCfg
+[INFO]: Parsing configuration from: wlr_rl.tasks.manager_based.wlr_rl.agents.rsl_rl_ppo_cfg:PPORunnerCfg
+[2026-06-15 19:49:39,285][isaaclab.envs.manager_based_env][WARNING] - Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-06-15_19-49-39.log[0m
+[36m======================================================================================[0m
+
+[33m19:49:39 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+Loading user config located at: '/opt/mamba/envs/env_isaaclab/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /opt/mamba/envs/env_isaaclab/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260615_194928.log
+2026-06-15T11:49:29Z [162ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-06-15T11:49:29Z [648ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-06-15T11:49:29Z [963ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-06-15T11:49:29Z [978ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 535.18.02     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | Tesla T4                         | Yes: 0 |     | 15606   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1eb8      | fed94ebf.. |
+|     |                                  |        |     |            | 0         |            |
+|=============================================================================================|
+| OS: 22.04.3 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.3, Kernel: 5.10.134-18.0.11.lifsea8.x86_64
+| Processor: Intel(R) Xeon(R) Platinum 8163 CPU @ 2.50GHz
+| Cores: 8 | Logical Cores: 16
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 62280 | Free Memory: 58897
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-06-15T11:49:35Z [6,278ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-06-15T11:49:39Z [10,335ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:39Z [10,335ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 535.18.02     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | Tesla T4                         | Yes: 0 |     | 15606   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1eb8      | fed94ebf.. |
+|     |                                  |        |     |            | 0         |            |
+|=============================================================================================|
+| OS: 22.04.3 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.3, Kernel: 5.10.134-18.0.11.lifsea8.x86_64
+| Processor: Intel(R) Xeon(R) Platinum 8163 CPU @ 2.50GHz
+| Cores: 8 | Locat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+gical Cores: 16
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 62280 | Free Memory: 58659
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-06-15T11:49:40Z [11,006ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-06-15T11:49:40Z [11,450ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:40Z [11,450ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-06-15T11:49:40Z [11,473ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:40Z [11,473ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-06-15T11:49:40Z [11,484ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:40Z [11,484ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-06-15T11:49:40Z [11,499ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:40Z [11,499ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-06-15T11:49:40Z [11,502ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:40Z [11,502ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-06-15T11:49:40Z [11,505ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-06-15T11:49:40Z [11,505ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-06-15T11:49:41Z [12,081ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.002
+	Rendering step-size   : 0.01
+	Environment step-size : 0.01
+[INFO] Generating terrains randomly took : 0.002611 seconds
+[INFO]: Time taken for scene creation : 2.405440 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 64
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.209834 seconds
+[33m19:49:42 [velocity_command.py] WARNING: The velocity command has the 'ranges.heading' attribute set to '(0.0, 0.0)' but the heading command is not active. Consider setting the flag for the heading command to True.[0m
+/opt/mamba/envs/env_isaaclab/lib/python3.11/site-packages/rsl_rl/utils/utils.py:244: UserWarning: The observation configuration dictionary 'obs_groups' must contain the 'policy' key. As an observation group with the name 'policy' was found, this is assumed to be the observation set. Consider adding the 'policy' key to the 'obs_groups' dictionary for clarity. This behavior will be removed in a future version.
+  warnings.warn(
+/opt/mamba/envs/env_isaaclab/lib/python3.11/site-packages/rsl_rl/utils/utils.py:282: UserWarning: The observation configuration dictionary 'obs_groups' must contain the 'critic' key. As an observation group with the name 'critic' was found, this is assumed to be the observation set. Consider adding the 'critic' key to the 'obs_groups' dictionary for clarity. This behavior will be removed in a future version.
+  warnings.warn(
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------+
+|              Active Command Terms              |
++-------+---------------+------------------------+
+| Index | Name          |          Type          |
++-------+---------------+------------------------+
+|   0   | base_velocity | UniformVelocityCommand |
++-------+---------------+------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++---------+---------------------------+
+|  Index  | Name                      |
++---------+---------------------------+
+|    0    | reset_base                |
+|    1    | reset_robot_joints        |
++---------+---------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 3 active terms.
++----------------------------------+
+|  Active Action Terms (shape: 6)  |
++--------+------------+------------+
+| Index  | Name       |  Dimension |
++--------+------------+------------+
+|   0    | hip_pos    |          2 |
+|   1    | knee_pos   |          2 |
+|   2    | wheel_vel  |          2 |
++--------+------------+------------+
+
+[INFO] Observation Manager: <ObservationManager> contains 2 groups.
++---------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (25,)) |
++-----------+---------------------------------+-----------+
+|   Index   | Name                            |   Shape   |
++-----------+---------------------------------+-----------+
+|     0     | base_ang_vel                    |    (3,)   |
+|     1     | projected_gravity               |    (3,)   |
+|     2     | leg_joint_pos                   |    (4,)   |
+|     3     | leg_joint_vel                   |    (4,)   |
+|     4     | wheel_vel                       |    (2,)   |
+|     5     | velocity_commands               |    (3,)   |
+|     6     | actions                         |    (6,)   |
++-----------+---------------------------------+-----------+
++---------------------------------------------------------+
+| Active Observation Terms in Group: 'critic' (shape: (29,)) |
++-----------+---------------------------------+-----------+
+|   Index   | Name                            |   Shape   |
++-----------+---------------------------------+-----------+
+|     0     | base_ang_vel                    |    (3,)   |
+|     1     | projected_gravity               |    (3,)   |
+|     2     | leg_joint_pos                   |    (4,)   |
+|     3     | leg_joint_vel                   |    (4,)   |
+|     4     | wheel_vel                       |    (2,)   |
+|     5     | velocity_commands               |    (3,)   |
+|     6     | actions                         |    (6,)   |
+|     7     | base_lin_vel                    |    (3,)   |
+|     8     | base_height                     |    (1,)   |
++-----------+---------------------------------+-----------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 7 active terms.
++--------------------------------------+
+|       Active Termination Terms       |
++-------+-------------------+----------+
+| Index | Name              | Time Out |
++-------+-------------------+----------+
+|   0   | time_out          |   True   |
+|   1   | turn_over         |  False   |
+|   2   | base_low          |  False   |
+|   3   | roll_pitch        |  False   |
+|   4   | front_low         |  False   |
+|   5   | rear_low          |  False   |
+|   6   | non_wheel_contact |  False   |
++-------+-------------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 23 active terms.
++--------------------------------------------------+
+|               Active Reward Terms                |
++-------+--------------------------------+---------+
+| Index | Name                           |  Weight |
++-------+--------------------------------+---------+
+|   0   | termination_penalty            | -2000.0 |
+|   1   | base_height_exp                |    40.0 |
+|   2   | flat_orientation_roll_exp      |    20.0 |
+|   3   | flat_orientation_pitch_exp     |   100.0 |
+|   4   | lin_vel_z_l2                   |    -5.0 |
+|   5   | ang_vel_x_l2                   |    -1.0 |
+|   6   | ang_vel_y_l2                   |    -4.0 |
+|   7   | dof_torques_l2                 | -0.0001 |
+|   8   | leg_acc_l2                     |  -1e-05 |
+|   9   | wheel_acc_l2                   |  -1e-07 |
+|   10  | leg_action_rate_l2             |    -0.5 |
+|   11  | wheel_action_rate_l2           |    -0.1 |
+|   12  | virtual_leg_angle_diff_l2      |   -20.0 |
+|   13  | virtual_leg_length_diff_l2     |    -5.0 |
+|   14  | virtual_leg_angle_deviation_l2 |   -15.0 |
+|   15  | undesired_contacts             |  -200.0 |
+|   16  | desired_contacts               |     0.0 |
+|   17  | constant_bonus                 |     5.0 |
+|   18  | flat_orientation_l2            |   -80.0 |
+|   19  | front_clearance                |    20.0 |
+|   20  | rear_clearance                 |    20.0 |
+|   21  | lin_vel_xy_l2                  |    -5.0 |
+|   22  | ang_vel_z_l2                   |    -0.5 |
++-------+--------------------------------+---------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+[INFO]: Completed setting up the environment...
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+ActorCritic.__init__ got unexpected arguments, which will be ignored: ['state_dependent_std']
+Actor MLP: MLP(
+  (0): Linear(in_features=25, out_features=128, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=128, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=6, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=29, out_features=128, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=128, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
+Loaded policy: logs/rsl_rl/cartpole_direct/2026-06-15_19-31-44_stand_strict_t4_urdf_contactfix_k64/model_602.pt
+steps=600 num_envs=64
+min_height=0.3346
+min_front_height=0.1931
+min_rear_height=0.2062
+mean_height=0.3679
+max_abs_roll_deg=3.84
+max_abs_pitch_deg=3.28
+mean_abs_roll_deg=0.20
+mean_abs_pitch_deg=0.19
+base_contact_fraction=0.0000
+non_wheel_contact_fraction=0.0000
+first_done_step=600
+terminated_count=0
+timeout_count=64
+termination_terms=['time_out', 'turn_over', 'base_low', 'roll_pitch', 'front_low', 'rear_low', 'non_wheel_contact']
+term_last/time_out=1.0000
+term_last/turn_over=0.0000
+term_last/base_low=0.0000
+term_last/roll_pitch=0.0000
+term_last/front_low=0.0000
+term_last/rear_low=0.0000
+term_last/non_wheel_contact=0.0000

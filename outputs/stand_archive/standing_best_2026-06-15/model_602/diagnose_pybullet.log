@@ -1,0 +1,19 @@
+pybullet build time: Jan 29 2025 23:17:20
+t= 0.00 base_z=0.392 roll=+0.0 pitch=-0.0 front_z=0.257 rear_z=0.257 wheel_vel=[-0.54,-0.28] action=[+0.71,+0.48,+0.67,+0.48,-0.07,-0.05] contacts=['wheel_l', 'wheel_r']
+t= 0.50 base_z=0.370 roll=+0.6 pitch=-0.4 front_z=0.237 rear_z=0.234 wheel_vel=[-0.39,-0.79] action=[+0.74,+0.62,+0.92,+0.82,+0.01,-0.01] contacts=['wheel_l', 'wheel_r']
+t= 1.00 base_z=0.370 roll=+0.2 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,+0.00] action=[+0.72,+0.60,+0.91,+0.85,-0.00,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 1.50 base_z=0.369 roll=+0.1 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 2.00 base_z=0.369 roll=+0.1 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 2.50 base_z=0.369 roll=+0.1 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 3.00 base_z=0.369 roll=+0.1 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 3.50 base_z=0.369 roll=+0.1 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 4.00 base_z=0.369 roll=+0.0 pitch=-0.4 front_z=0.236 rear_z=0.233 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 4.50 base_z=0.369 roll=+0.0 pitch=-0.4 front_z=0.236 rear_z=0.232 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 5.00 base_z=0.369 roll=-0.0 pitch=-0.4 front_z=0.236 rear_z=0.232 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+t= 5.50 base_z=0.369 roll=-0.0 pitch=-0.5 front_z=0.237 rear_z=0.232 wheel_vel=[+0.00,-0.00] action=[+0.72,+0.60,+0.91,+0.84,-0.01,-0.02] contacts=['wheel_l', 'wheel_r']
+summary:
+  min_front_height=0.2279
+  min_rear_height=0.2302
+  max_abs_roll_deg=0.64
+  max_abs_pitch_deg=0.85
+  first_non_wheel_contact_time=None
