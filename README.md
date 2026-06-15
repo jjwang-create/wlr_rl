@@ -2,7 +2,7 @@
 
 ## Coworkers
 
-Wangjiajun、Zhangcenshuo，equally contributed to this repo.
+Wangjiajun、Zhangcenshuo，equally contributed to this repo. Jiangyvchen leads the project.
 
 ## Overview
 
