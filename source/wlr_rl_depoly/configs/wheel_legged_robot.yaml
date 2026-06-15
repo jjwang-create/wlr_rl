@@ -1,0 +1,32 @@
+policy_path: "../wlr_rl/logs/rsl_rl/cartpole_direct/2026-02-09_16-01-01/model_8991.pt"
+xml_path: "../../model/wheel_legged_robot/xml/wheel_legged_robot.xml"
+
+# Total simulation time
+simulation_duration: 80
+# Simulation time step
+simulation_dt: 0.002
+control_decimation: 5
+
+# Joint order: lf0_Joint, lf1__Joint, l_wheel_Joint, rf0_Joint, rf1_Joint, r_wheel_Joint
+# Joint control
+kp_joint: 40
+kd_joint: 2
+kd_wheel: 0.2
+
+default_angles: [1.05, 1.2845, 0.0, 1.05, 1.2845, 0.0]
+
+# Action scales
+action_scale_hip: 3.14
+action_scale_knee: 1.2
+action_scale_wheel: 60.0
+
+num_actions: 6
+clip_actions: 100
+
+num_obs: 25
+
+
+# Leg param
+l1: 0.21
+l2: 0.248
+
